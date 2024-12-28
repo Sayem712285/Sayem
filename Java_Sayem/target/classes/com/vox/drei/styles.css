@@ -1,0 +1,332 @@
+.root {
+    -fx-background-color: #f0f0f0;
+    -fx-font-family: 'Poppins', sans-serif;
+}
+
+.about-container {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 10);
+}
+
+.about-title {
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.about-subtitle {
+    -fx-font-size: 24px;
+    -fx-text-fill: #34495e;
+}
+
+.about-description {
+    -fx-font-size: 18px;
+    -fx-text-fill: #7f8c8d;
+    -fx-text-alignment: center;
+}
+
+.about-copyright {
+    -fx-font-size: 14px;
+    -fx-text-fill: #95a5a6;
+}
+
+.about-button {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-pref-width: 250px;
+    -fx-pref-height: 50px;
+    -fx-background-radius: 25;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 1);
+}
+
+.about-button:hover {
+    -fx-background-color: #27ae60;
+}
+
+.social-button {
+    -fx-background-color: transparent;
+    -fx-padding: 10;
+}
+
+.social-button .svg-path {
+    -fx-fill: #3498db;
+}
+
+.social-button:hover .svg-path {
+    -fx-fill: #2980b9;
+}
+
+
+* {
+    -fx-font-family: Poppins;
+}
+
+.button {
+    -fx-background-color: rgba(26, 42, 108, 0.8); /* Dark navy blue */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+    -fx-transition: all 0.3s ease;
+}
+
+.button:hover {
+    -fx-background-color: rgba(26, 42, 108, 1); /* Darker navy on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 15, 0, 0, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.primary-button {
+    -fx-background-color: #003366; /* Dark navy blue */
+}
+
+.primary-button:hover {
+    -fx-background-color: #002244; /* Darker shade on hover */
+}
+
+.secondary-button {
+    -fx-background-color: #FFB300; /* Yellowish for secondary buttons */
+}
+
+.secondary-button:hover {
+    -fx-background-color: #FFA000; /* Darker shade on hover */
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #1a1a1a; /* Dark text color for better readability */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 5, 0, 0, 0);
+}
+
+.text-field {
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-background-color: rgba(26, 42, 108, 0.1); /* Light navy blue */
+    -fx-border-color: rgba(26, 42, 108, 0.3);
+    -fx-text-fill: #1a1a1a; /* Dark text color for better readability */
+    -fx-prompt-text-fill: #808080; /* Dark gray prompt text */
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+}
+
+.title {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+    -fx-text-fill: #003366; /* Dark navy blue for titles */
+}
+
+.notification-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ff0000; /* Red color for visibility */
+    -fx-font-weight: bold;
+}
+
+.subtitle {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #003366; /* Dark navy blue for subtitles */
+}
+
+.menu-button {
+    -fx-min-width: 200px;
+}
+
+.table-view {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+}
+
+.table-view .column-header-background {
+    -fx-background-color: rgba(26, 42, 108, 0.2); /* Light navy blue for column headers */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent derive(-fx-base, 80%) transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+.table-row-cell {
+    -fx-background-color: rgba(26, 42, 108, 0.05); /* Light navy blue for table rows */
+    -fx-text-fill: white;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: rgba(26, 42, 108, 0.1); /* Light navy blue for odd rows */
+}
+
+.table-row-cell:even {
+    -fx-background-color: rgba(26, 42, 108, 0.2); /* Slightly darker for even rows */
+}
+
+.list-view {
+    -fx-background-color: rgba(255, 255, 255, 0.1); /* Light navy background */
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1);
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+    -fx-text-fill: #1a1a1a; /* Dark text color for better readability */
+}
+
+.list-cell:odd {
+    -fx-background-color: rgba(26, 42, 108, 0.1); /* Light navy for odd cells */
+}
+
+.list-cell:even {
+    -fx-background-color: rgba(26, 42, 108, 0.2); /* Slightly darker for even cells */
+}
+
+.dialog-pane {
+    -fx-background-color: #f0f8ff; /* Keeping the dialog pane background */
+}
+
+.dialog-pane .button {
+    -fx-background-color: #2196F3; /* Keeping primary button color */
+    -fx-text-fill: white;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #1976D2; /* Keeping hover color for primary button */
+}
+
+.check-box {
+    -fx-text-fill: rgba(26, 42, 108, 0.8);
+    -fx-font-size: 15px;
+}
+
+.check-box .box {
+    -fx-background-color: rgba(26, 42, 108, 0.1); /* Light navy for checkbox */
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: rgba(26, 42, 108, 0.8);
+}
+
+.combo-box {
+    -fx-background-color: rgba(26, 42, 108, 0.1); /* Light navy for combo box */
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: rgba(26, 42, 108, 0.8);
+    -fx-background-color: transparent;
+    -fx-font-size: 15px;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+}
+
+.score-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFB300; /* Keeping the score label color */
+}
+
+.radio-button {
+    -fx-text-fill: #1a1a1a; /* Dark text color for better visibility */
+}
+
+.radio-button .radio {
+    -fx-background-color: rgba(26, 42, 108, 0.1);
+    -fx-border-color: rgba(26, 42, 108, 0.3);
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+}
+
+.radio-button:selected .radio .dot {
+    -fx-background-color: #003366;
+}
+
+.quiz-container {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 10);
+}
+
+.quiz-name-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #003366;
+}
+
+.quiz-progress-bar {
+    -fx-accent: #003366;
+}
+
+.quiz-progress-bar .bar {
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.quiz-progress-bar .track {
+    -fx-background-color: #E0E0E0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.question-number-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #666666;
+}
+
+.question-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #003366;
+}
+
+.timer-circle {
+    -fx-stroke: #003366;
+    -fx-stroke-width: 3;
+}
+
+.timer-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #003366;
+}
+
+.quiz-button {
+    -fx-background-color: #003366;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 25;
+}
+
+.quiz-button:hover {
+    -fx-background-color: #002244;
+}

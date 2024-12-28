@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:id="rootVBox" xmlns:fx="http://javafx.com/fxml" fx:controller="com.vox.drei.ScoreController"
+      spacing="20" alignment="CENTER" stylesheets="@styles.css">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="%quiz.completed" styleClass="title"/>
+    <Label fx:id="quizNameLabel" styleClass="subtitle"/>
+    <Label fx:id="scoreLabel" styleClass="score-label"/>
+    <Button text="%view.answers" onAction="#viewAnswers"/>
+    <Button text="%back.to.main" onAction="#backToMain"/>
+
+    <TableView fx:id="answersTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="questionColumn" text="%question"/>
+            <TableColumn fx:id="userAnswerColumn" text="%your.answer"/>
+            <TableColumn fx:id="correctAnswerColumn" text="%correct.answer"/>
+        </columns>
+    </TableView>
+</VBox>

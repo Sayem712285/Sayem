@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.vox.drei.AddQuestionController"
+      spacing="10" alignment="CENTER" stylesheets="@styles.css">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="%add.new.question" styleClass="title"/>
+    <TextField fx:id="questionField" promptText="%enter.your.question"/>
+    <ComboBox fx:id="questionTypeComboBox" promptText="%select.question.type"/>
+    <VBox fx:id="answersBox" spacing="5"/>
+    <ComboBox fx:id="correctAnswerComboBox" promptText="%select.correct.answer"/>
+    <Button text="%add.question" onAction="#addQuestion"/>
+</VBox>

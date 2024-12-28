@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.vox.drei.QuizSettingsController"
+      spacing="10" alignment="CENTER" stylesheets="@styles.css">
+    <Label text="%quiz.settings" styleClass="title"/>
+    <GridPane hgap="10" vgap="10" alignment="CENTER">
+        <Label text="%number.of.questions" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="numQuestionsField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="%time.per.question" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="timePerQuestionField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <CheckBox fx:id="timerEnabledCheckBox" text="%enable.timer" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2"/>
+        <CheckBox fx:id="animationEnabledCheckBox" text="%enable.animation" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="2"/>
+        <CheckBox fx:id="immediateAnswerCheckBox" text="%immediate.answer" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2"/>
+
+        <Label text="%language" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        <ComboBox fx:id="languageComboBox" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    </GridPane>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="%save.settings" onAction="#saveSettings"/>
+        <Button text="%back.to.main" onAction="#backToMain"/>
+    </HBox>
+    <Label fx:id="notificationLabel" styleClass="notification"/>
+</VBox>

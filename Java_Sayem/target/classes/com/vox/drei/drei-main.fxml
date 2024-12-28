@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.effect.DropShadow?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.vox.drei.DreiController"
+           stylesheets="@styles.css">
+    <VBox spacing="20" alignment="CENTER" styleClass="main-container">
+        <padding>
+            <Insets top="40" right="40" bottom="40" left="40"/>
+        </padding>
+        <ImageView fitHeight="250" fitWidth="250" preserveRatio="true">
+            <Image url="@icon.png"/>
+            <effect>
+                <DropShadow/>
+            </effect>
+        </ImageView>
+        <Label text="%title" styleClass="title"/>
+        <Button text="%start.quiz" onAction="#startQuiz" styleClass="menu-button"/>
+        <Button text="%manage.quizzes" onAction="#manageQuizzes" styleClass="menu-button"/>
+        <Button text="%quiz.settings" onAction="#openSettings" styleClass="menu-button"/>
+        <Button text="%about" onAction="#openAbout" styleClass="menu-button"/>
+        <Button text="%exit" onAction="#exitGame" styleClass="menu-button"/>
+    </VBox>
+</StackPane>
